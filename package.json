@@ -24,11 +24,13 @@
   },
   "scripts": {
     "lint": "eslint --ext .jsx,.js src",
+    "test": "nyc ava --verbose",
     "prettier": "prettier --single-quote --write \"src/**/*.{js,jsx}\"",
     "precommit": "lint-staged && yarn lint"
   },
   "dependencies": {},
   "devDependencies": {
+    "ava": "^0.21.0",
     "eslint": "^4.4.1",
     "eslint-config-airbnb": "^15.1.0",
     "eslint-config-prettier": "^2.3.0",
@@ -38,6 +40,7 @@
     "eslint-plugin-react": "^7.1.0",
     "husky": "^0.14.3",
     "lint-staged": "^4.0.3",
+    "nyc": "^11.1.0",
     "prettier": "^1.5.3"
   }
 }
