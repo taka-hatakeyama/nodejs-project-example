@@ -1,7 +1,7 @@
 # nodejs
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/patrickocoffeyo/nodejs.svg)](https://greenkeeper.io/)
-[![CirlceCI Badge](https://circleci.com/gh/:owner/:repo/tree/:branch.svg?style=shield&circle-token=:circle-token)](https://circleci.com)
+[![CirlceCI Badge](https://circleci.com/gh/patrickocoffeyo/nodejs.svg?style=shield&circle-token=:circle-token)](https://circleci.com)
 
 Repository containing the bare bones tools I use in every Node.js project (yarn, eslint, prettier, husky, etc)
 
