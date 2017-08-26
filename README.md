@@ -14,4 +14,8 @@ Repository containing the bare bones tools I use in every Node.js project (yarn,
  * To run tests, and coverage tools: `yarn test`.
  * To lint this codebase, run: `yarn lint`.
  * To format this codebase, run: `yarn prettier`.
+ * To validate flow typing, run: `yarn flow`.
  * NOTE: lint and prettier will be run before a commit is made.
+
+## Building
+To build this project, simply run `yarn build`.

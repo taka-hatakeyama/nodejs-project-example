@@ -30,13 +30,14 @@
     "prepublish": "yarn run build",
     "flow": "flow",
     "commitmsg": "validate-commit-msg",
-    "precommit": "lint-staged && yarn lint"
+    "precommit": "lint-staged && yarn lint && yarn flow"
   },
   "dependencies": {},
   "devDependencies": {
     "ava": "^0.21.0",
     "babel-cli": "^6.26.0",
     "babel-eslint": "^7.2.3",
+    "babel-preset-env": "^1.6.0",
     "babel-preset-flow": "^6.23.0",
     "eslint": "^4.4.1",
     "eslint-config-airbnb": "^15.1.0",
