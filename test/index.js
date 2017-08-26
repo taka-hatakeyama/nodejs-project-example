@@ -3,9 +3,8 @@
  * Contains a simple test for the addition method in index.js.
  */
 
-
 import test from 'ava';
-import add from '../index';
+import add from '../src/index';
 
 test('Can add two numbers', t => {
   t.plan(1);
