@@ -26,6 +26,7 @@
     "lint": "eslint --ext .jsx,.js src",
     "test": "nyc ava --verbose",
     "prettier": "prettier --single-quote --write \"src/**/*.{js,jsx}\"",
+    "commitmsg": "validate-commit-msg",
     "precommit": "lint-staged && yarn lint"
   },
   "dependencies": {},
@@ -41,6 +42,7 @@
     "husky": "^0.14.3",
     "lint-staged": "^4.0.3",
     "nyc": "^11.1.0",
-    "prettier": "^1.5.3"
+    "prettier": "^1.5.3",
+    "validate-commit-msg": "^2.14.0"
   }
 }
