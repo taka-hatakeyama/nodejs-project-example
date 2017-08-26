@@ -4,7 +4,7 @@
  */
 
 import test from 'ava';
-import add from '../src/index';
+import add from '../lib/index';
 
 test('Can add two numbers', t => {
   t.plan(1);

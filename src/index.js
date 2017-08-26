@@ -3,6 +3,8 @@
  * Exports a simple (throw away) addition method.
  */
 
+// @flow
+
 /**
  * Adds two numbers together and returns result.
  *
@@ -11,4 +13,4 @@
  *
  * @returns {number} - Value of a and b added together.
  */
-module.exports = (a, b) => a + b;
+module.exports = (a: ?number, b: ?number) => a + b;

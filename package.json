@@ -24,7 +24,7 @@
   },
   "scripts": {
     "lint": "eslint --ext .jsx,.js src",
-    "test": "nyc ava --verbose",
+    "test": "yarn build && nyc ava --verbose",
     "prettier": "prettier --single-quote --write \"/src/**/*.{js,jsx}\"",
     "build": "babel src/ -d lib/",
     "prepublish": "yarn run build",
