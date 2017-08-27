@@ -9,6 +9,8 @@ Repository containing the bare bones tools I use in every Node.js project (yarn,
 ## Requirements
  * Node.js (see .nvmrc for correct version).
  * Yarn
+ * Greenkeeper.io configured to run on your repository.
+ * CircleCI.com configured to run on your repository.
 
 ## Setup
  * Clone this repository.
@@ -24,3 +26,19 @@ Repository containing the bare bones tools I use in every Node.js project (yarn,
 
 ## Building
 To build this project, simply run `yarn build`.
+
+## Continuous Integration and Greenkeeper
+This project contains CircleCI integration configuration. To get this working, do the following:
+* Sign up for a CircleCI account.
+* Add your project to Circle (Projects -> Add Project).
+* Add `GH_TOKEN` and `NPM_TOKEN` environment variables to your CircleCI project. (See [this documentation](https://glebbahmutov.com/blog/how-to-setup-semantic-release-on-circle-ci/) for instructions on fetching those tokens).
+* Tada!
+
+To set up Greenkeeper, do the following:
+* Make sure you have CircleCI set up.
+* Sign up for a Greenkeeper account.
+* Add your project repository to Greenkeeper.
+* Merge the initial Greenkeeper pull request.
+
+## TODO
+- [ ] Add greenkeeper lock integration.

@@ -1,6 +1,6 @@
 {
   "name": "nodejs",
-  "version": "1.0.0",
+  "version": "0.0.0-semantic-release",
   "description": "Bare bones tools that should be used in every Node.js project.",
   "main": "index.js",
   "repository": "git@github.com:patrickocoffeyo/nodejs.git",
