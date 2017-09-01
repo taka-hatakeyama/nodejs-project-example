@@ -22,6 +22,9 @@
       "git add"
     ]
   },
+  "release": {
+    "verifyConditions": "condition-circle"
+  },
   "scripts": {
     "lint": "eslint --ext .jsx,.js src",
     "test": "jest",
@@ -41,6 +44,7 @@
     "babel-jest": "^20.0.3",
     "babel-preset-env": "^1.6.0",
     "babel-preset-flow": "^6.23.0",
+    "condition-circle": "^1.5.0",
     "eslint": "^4.4.1",
     "eslint-config-airbnb": "^15.1.0",
     "eslint-config-prettier": "^2.3.0",
