@@ -28,8 +28,6 @@ jobs:
       - run: yarn lint
       - run: yarn test
       - run: ./node_modules/greenkeeper-lockfile/upload.js
-      # When you have added a Github and NPM token to CircleCI, uncomment. See
-      # the README for additional information.
-      #- run: yarn semantic-release
+      - run: yarn semantic-release
 
 

@@ -49,3 +49,14 @@ To set up Snyk
 * Sign up for a Snyk.io account.
 * Enable Snyk for your repository.
 * Update Snyk shield in this README to point to the correct repository.
+
+## Automated Releases
+To enable automated releases to NPM via semantic release, replace the `semantic-release` command in your package.json file with the following:
+
+```javascript
+...
+  "semantic-release": "semantic-release pre ; npm publish ; semantic-release post",
+...
+```
+
+This project isn't published to NPM, this step simply adds `npm publish` between semantic-release pre/post commands.
