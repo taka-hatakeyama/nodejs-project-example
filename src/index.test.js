@@ -3,10 +3,10 @@
  * Contains a simple test for the addition method in index.js.
  */
 
-import test from 'ava';
+/* global test expect */
+
 import add from '../lib/index';
 
-test('Can add two numbers', t => {
-  t.plan(1);
-  t.is(add(1, 1), 2);
+test('Can add two numbers', () => {
+  expect(add(1, 2)).toBe(3);
 });
