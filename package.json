@@ -33,7 +33,10 @@
     "commitmsg": "validate-commit-msg",
     "precommit": "lint-staged && yarn lint && yarn flow"
   },
-  "dependencies": {},
+  "dependencies": {
+    "commitizen": "^2.9.6",
+    "global": "^4.3.2"
+  },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-eslint": "^7.2.3",
