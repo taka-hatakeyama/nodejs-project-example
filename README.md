@@ -4,6 +4,7 @@
 [![CirlceCI Badge](https://circleci.com/gh/patrickocoffeyo/nodejs.svg?style=shield&circle-token=:circle-token)](https://circleci.com)
 [![Dependency Status](https://david-dm.org/patrickocoffeyo/nodejs/master.svg)](https://david-dm.org/patrickocoffeyo/nodejs/master)
 [![devDependency Status](https://david-dm.org/patrickocoffeyo/nodejs/master/dev-status.svg)](https://david-dm.org/patrickocoffeyo/nodejs/master#info=devDependencies)
+[![Known Vulnerabilities](https://snyk.io/test/github/patrickocoffeyo/nodejs/badge.svg)](https://snyk.io/test/github/patrickocoffeyo/nodejs)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
@@ -30,19 +31,21 @@ Repository containing the bare bones tools I use in every Node.js project (yarn,
 ## Building
 To build this project, simply run `yarn build`.
 
-## Continuous Integration and Greenkeeper
+## Services and Integrations
 This project contains CircleCI integration configuration. To get this working, do the following:
 * Sign up for a CircleCI account.
 * Add your project to Circle (Projects -> Add Project).
 * Add `GH_TOKEN` and `NPM_TOKEN` environment variables to your CircleCI project. (See [this documentation](https://glebbahmutov.com/blog/how-to-setup-semantic-release-on-circle-ci/) for instructions on fetching those tokens).
-* Tada!
+* Update CircleCI shield in this README to point to the correct repository.
 
 To set up Greenkeeper, do the following:
 * Make sure you have CircleCI set up.
 * Sign up for a Greenkeeper account.
 * Add your project repository to Greenkeeper.
 * Merge the initial Greenkeeper pull request.
+* Update greenkeeper, dependencies, and devDependencies shields in this README to point to the correct repository.
 
-## TODO
-- [ ] Add greenkeeper lock integration.
-- [ ] Add snyk.io integration.
+To set up Snyk
+* Sign up for a Snyk.io account.
+* Enable Snyk for your repository.
+* Update Snyk shield in this README to point to the correct repository.
