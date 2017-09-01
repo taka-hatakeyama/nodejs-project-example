@@ -22,12 +22,13 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "yarn.lock" }}
 
-      - run: yarn flow
+      - run: yarn global add greenkeeper-lockfile@1
+      - run: greenkeeper-lockfile-update
       - run: yarn flow
       - run: yarn build
       - run: yarn lint
       - run: yarn test
-      - run: yarn greenkeeper-lock
+      - run: greenkeeper-lockfile-upload
       # When you have added a Github and NPM token to CircleCI, uncomment. See
       # the README for additional information.
       #- run: yarn semantic-release
