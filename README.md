@@ -21,8 +21,10 @@ Repository containing the bare bones tools I use in every Node.js project (yarn,
  * In this repository's root folder, run `yarn`.
 
 ## Testing & Linting
- * All tests are located in the `test` directory.
- * To run tests, and coverage tools: `yarn test`.
+This project uses [Jest](https://facebook.github.io/jest/), [ESlint](https://github.com/eslint/eslint) with the [AirBnb standard](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb), and [Prettier](https://github.com/prettier/prettier) for testing, linting, and formatting.
+
+ * All test files are suffixed with `.test.js`.
+ * To run tests: `yarn test`.
  * To lint this codebase, run: `yarn lint`.
  * To format this codebase, run: `yarn prettier`.
  * To validate flow typing, run: `yarn flow`.
