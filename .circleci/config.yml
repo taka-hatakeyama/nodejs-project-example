@@ -22,7 +22,7 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "yarn.lock" }}
 
-      - run: yarn global add greenkeeper-lockfile@1
+      - run: npm install -g greenkeeper-lockfile@1
       - run: greenkeeper-lockfile-update
       - run: yarn flow
       - run: yarn build
