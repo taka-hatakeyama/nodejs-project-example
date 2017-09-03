@@ -28,11 +28,10 @@ jobs:
       - run: yarn lint
       - run: yarn test
       - run: ./node_modules/greenkeeper-lockfile/upload.js
-  deploy:
-    docker:
-      - image: circleci/node:8.4.0
-    working_directory: ~/repo
 
-    steps:
-      - checkout
-      - run: yarn semantic-release
+      - type: deploy
+        name: Deploy project.
+        command: |
+          if [ "${CIRCLE_BRANCH}" == "master" ]; then
+            yarn semantic-release
+          fi
