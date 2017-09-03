@@ -1,5 +1,5 @@
 {
-  "name": "nodejs",
+  "name": "nodejs-project-example",
   "version": "0.0.0-semantic-release",
   "description": "Bare bones tools that should be used in every Node.js project.",
   "main": "index.js",
@@ -32,7 +32,7 @@
     "build": "babel src/ -d lib/",
     "prepublish": "yarn run build",
     "greenkeeper-lock": "greenkeeper-lockfile-update ; greenkeeper-lockfile-upload",
-    "semantic-release": "semantic-release pre ; semantic-release post",
+    "semantic-release": "semantic-release pre ; npm publish ; semantic-release post",
     "flow": "flow",
     "commitmsg": "validate-commit-msg",
     "precommit": "lint-staged && yarn lint && yarn flow"
