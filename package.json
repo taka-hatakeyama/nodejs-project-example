@@ -28,7 +28,7 @@
   "scripts": {
     "lint": "eslint --ext .jsx,.js src",
     "test": "jest",
-    "prettier": "prettier --single-quote --write \"/src/**/*.{js,jsx}\"",
+    "prettier": "prettier --single-quote --write \"src/**/*.{js,jsx}\"",
     "build": "babel src/ -d lib/",
     "prepublish": "yarn run build",
     "greenkeeper-lock": "greenkeeper-lockfile-update ; greenkeeper-lockfile-upload",
