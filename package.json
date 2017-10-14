@@ -34,11 +34,13 @@
     "greenkeeper-lock": "greenkeeper-lockfile-update ; greenkeeper-lockfile-upload",
     "semantic-release": "semantic-release pre ; npm publish ; semantic-release post",
     "flow": "flow",
-    "commitmsg": "validate-commit-msg",
+    "commitmsg": "commitlint -e $GIT_PARAMS",
     "precommit": "lint-staged && yarn lint && yarn flow"
   },
   "dependencies": {},
   "devDependencies": {
+    "@commitlint/cli": "^4.2.0",
+    "@commitlint/config-angular": "^4.2.0",
     "babel-cli": "^6.26.0",
     "babel-eslint": "^8.0.1",
     "babel-jest": "^21.0.0",
@@ -58,7 +60,6 @@
     "lint-staged": "^4.0.3",
     "prettier": "^1.5.3",
     "semantic-release": "^8.0.3",
-    "semantic-release-conventional-commits": "^1.1.0",
-    "validate-commit-msg": "^2.14.0"
+    "semantic-release-conventional-commits": "^1.1.0"
   }
 }
