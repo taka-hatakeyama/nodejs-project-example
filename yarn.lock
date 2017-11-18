@@ -2,11 +2,11 @@
 # yarn lockfile v1
 
 
-"@commitlint/cli@^4.2.0":
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/@commitlint/cli/-/cli-4.2.0.tgz#6ba6717bd894e0298d2a22242e9b316d5764c621"
+"@commitlint/cli@5.0.0":
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/@commitlint/cli/-/cli-5.0.0.tgz#06347db00ea13bdd0221061884146f670b43fe2c"
   dependencies:
-    "@commitlint/core" "^4.2.0"
+    "@commitlint/core" "^5.0.0"
     babel-polyfill "^6.23.0"
     chalk "^2.0.1"
     get-stdin "^5.0.1"
@@ -17,24 +17,34 @@
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/@commitlint/config-angular/-/config-angular-4.2.0.tgz#1f6f5211b623870dc0fd3c8061c6d5827ba6897e"
 
-"@commitlint/core@^4.2.0":
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/@commitlint/core/-/core-4.2.0.tgz#c5b55f0258b7f5168fc60a72d204bf5b2eb04193"
+"@commitlint/core@^5.0.0":
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/@commitlint/core/-/core-5.0.0.tgz#057d3d98c4b1ce8766aa2fe1c7613eb152068658"
   dependencies:
+    "@marionebl/conventional-commits-parser" "^3.0.0"
     "@marionebl/git-raw-commits" "^1.2.0"
     "@marionebl/sander" "^0.6.0"
     babel-runtime "^6.23.0"
     chalk "^2.0.1"
     conventional-changelog-angular "^1.3.3"
-    conventional-commits-parser "^1.3.0"
     cosmiconfig "^3.0.1"
     find-up "^2.1.0"
-    franc "^2.0.0"
     lodash "^4.17.4"
     path-exists "^3.0.0"
-    pos "^0.4.2"
     resolve-from "^3.0.0"
     semver "^5.3.0"
+
+"@marionebl/conventional-commits-parser@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@marionebl/conventional-commits-parser/-/conventional-commits-parser-3.0.0.tgz#9da29b4d2c8f05c0f9cdd02936713b8096c958d3"
+  dependencies:
+    JSONStream "^1.0.4"
+    is-text-path "^1.0.0"
+    lodash "^4.2.1"
+    meow "^3.3.0"
+    split2 "^2.0.0"
+    through2 "^2.0.0"
+    trim-off-newlines "^1.0.0"
 
 "@marionebl/git-raw-commits@^1.2.0":
   version "1.2.0"
@@ -1294,7 +1304,7 @@ conventional-commits-filter@^1.0.0:
     is-subset "^0.1.1"
     modify-values "^1.0.0"
 
-conventional-commits-parser@^1.0.0, conventional-commits-parser@^1.3.0:
+conventional-commits-parser@^1.0.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/conventional-commits-parser/-/conventional-commits-parser-1.3.0.tgz#e327b53194e1a7ad5dc63479ee9099a52b024865"
   dependencies:
@@ -1848,7 +1858,7 @@ flat-cache@^1.2.1:
     graceful-fs "^4.1.2"
     write "^0.2.1"
 
-flow-bin@0.59.0:
+flow-bin@^0.59.0:
   version "0.59.0"
   resolved "https://registry.yarnpkg.com/flow-bin/-/flow-bin-0.59.0.tgz#8c151ee7f09f1deed9bf0b9d1f2e8ab9d470f1bb"
 
@@ -1898,12 +1908,6 @@ form-data@~2.1.1:
     asynckit "^0.4.0"
     combined-stream "^1.0.5"
     mime-types "^2.1.12"
-
-franc@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/franc/-/franc-2.0.0.tgz#d9939eded4b486acf4b9f33591fe8e69e5464616"
-  dependencies:
-    trigram-utils "^0.1.0"
 
 fs-readdir-recursive@^1.0.0:
   version "1.0.0"
@@ -2942,7 +2946,7 @@ levn@^0.3.0, levn@~0.3.0:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
 
-lint-staged@5.0.0:
+lint-staged@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/lint-staged/-/lint-staged-5.0.0.tgz#f1c670e03e2fdf3f3d0eb81f72d3bcf658770e54"
   dependencies:
@@ -3281,10 +3285,6 @@ ms@2.0.0:
 mute-stream@0.0.7:
   version "0.0.7"
   resolved "https://registry.yarnpkg.com/mute-stream/-/mute-stream-0.0.7.tgz#3075ce93bc21b8fab43e1bc4da7e8115ed1e7bab"
-
-n-gram@^0.1.0:
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/n-gram/-/n-gram-0.1.2.tgz#9acecb0f797fbfd22a0ad8a28d987880a63002ab"
 
 nan@^2.3.0:
   version "2.6.2"
@@ -3666,10 +3666,6 @@ pkg-dir@^1.0.0:
 pluralize@^7.0.0:
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/pluralize/-/pluralize-7.0.0.tgz#298b89df8b93b0221dbf421ad2b1b1ea23fc6777"
-
-pos@^0.4.2:
-  version "0.4.2"
-  resolved "https://registry.yarnpkg.com/pos/-/pos-0.4.2.tgz#20e9c77fbeedcc356823cea63c7585cace93be2a"
 
 prelude-ls@~1.1.2:
   version "1.1.2"
@@ -4471,12 +4467,6 @@ travis-deploy-once@^2.0.1:
     axios "^0.16.2"
     semver "^5.4.1"
     travis-ci "^2.1.1"
-
-trigram-utils@^0.1.0:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/trigram-utils/-/trigram-utils-0.1.1.tgz#7df8a092c9897fc2e09dac22f423e283231762e7"
-  dependencies:
-    n-gram "^0.1.0"
 
 trim-newlines@^1.0.0:
   version "1.0.0"
