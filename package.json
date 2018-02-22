@@ -30,7 +30,7 @@
     "test": "jest",
     "prettier": "prettier --single-quote --write \"src/**/*.{js,jsx}\"",
     "build": "babel src/ -d lib/",
-    "prepublish": "yarn run build",
+    "prepublishOnly": "yarn run build",
     "greenkeeper-lock": "greenkeeper-lockfile-update ; greenkeeper-lockfile-upload",
     "semantic-release": "semantic-release pre ; npm publish ; semantic-release post",
     "flow": "flow",
