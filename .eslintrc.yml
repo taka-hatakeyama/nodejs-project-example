@@ -1,6 +1,9 @@
 parser: babel-eslint
 parserOptions:
   ecmaVersion: 6
+globals:
+  test: true
+  expect: true
 extends:
   - airbnb-base
   - prettier
