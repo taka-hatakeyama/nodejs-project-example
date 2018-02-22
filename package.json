@@ -60,6 +60,6 @@
     "lint-staged": "^5.0.0",
     "prettier": "^1.5.3",
     "semantic-release": "^8.0.3",
-    "semantic-release-conventional-commits": "^1.1.0"
+    "semantic-release-conventional-commits": "^2.0.0"
   }
 }
