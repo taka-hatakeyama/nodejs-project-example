@@ -43,7 +43,7 @@
     "@commitlint/config-angular": "^4.2.0",
     "babel-cli": "^6.26.0",
     "babel-eslint": "^8.0.1",
-    "babel-jest": "^21.0.0",
+    "babel-jest": "^22.0.0",
     "babel-preset-env": "^1.6.0",
     "babel-preset-flow": "^6.23.0",
     "condition-circle": "^2.0.0",
