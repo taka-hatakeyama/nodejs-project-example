@@ -49,7 +49,7 @@
     "condition-circle": "^2.0.0",
     "eslint": "^4.8.0",
     "eslint-config-airbnb-base": "^12.0.2",
-    "eslint-config-prettier": "^2.3.0",
+    "eslint-config-prettier": "^3.5.0",
     "eslint-plugin-flowtype": "^2.35.0",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-prettier": "^2.1.2",
